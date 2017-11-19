@@ -964,3 +964,9 @@ HTML("""
 ```python
 
 ```
+
+## Discussion
+
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?
+
+The hardest part of this project is all about making it being robust against shadows and lighting conditions of the video. Simple thing like the order of image processing could affect greatly on the outcome, for example, thresholding after warping can get a better result than warping after thresholding. With the current image processing pipeline it still couldn't managed to complete the harder challenge, I think in order to make it a more robust pipeline, we will need at least an image normalization process. Besides, perhaps a more dynamic image thresholding to deal with various kind of illumination variations. Also, I am very interested in how well will it work by using deep learning approach on this project.
